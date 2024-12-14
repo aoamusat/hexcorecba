@@ -10,6 +10,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
+import jakarta.persistence.Version;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -50,6 +51,10 @@ public class Account {
 
     @Column(name = "created_date")
     private LocalDateTime createdDate;
+
+    @Version
+    @Column(name = "version")
+    private Integer version;
 
     @Column(name = "last_modified_date")
     private LocalDateTime lastModifiedDate;
