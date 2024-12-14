@@ -25,22 +25,31 @@ public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @Column(name = "account_number")
     private String accountNumber;
+
     @Column(name = "account_type")
     private String accountType;
+
     @Column(name = "balance")
     private Double balance;
-    @Column(name = "customer_name")
-    private String customerName;
+
+    @Column(name = "account_name")
+    private String accountName;
+
     @Column(name = "email")
     private String email;
+
     @Column(name = "phone_number")
     private String phoneNumber;
+
     @Column(name = "is_active")
     private Boolean isActive;
+
     @Column(name = "created_date")
     private LocalDateTime createdDate;
+
     @Column(name = "last_modified_date")
     private LocalDateTime lastModifiedDate;
 
