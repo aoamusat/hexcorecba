@@ -1,8 +1,12 @@
 package com.hexcore.cba.hexcorecba.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class AccountDTO {
 
     private Long id;
@@ -12,4 +16,5 @@ public class AccountDTO {
     private Double balance;
     private String email;
     private String phoneNumber;
+    private boolean isActive;
 }
